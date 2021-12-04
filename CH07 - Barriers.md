@@ -119,6 +119,9 @@ class Shopper extends Thread {
 
 # 3 CountDownLatch
 
+- 멀티 쓰레드에서 모든 동작이 끝나기를 기다려야 하는 상황이라면 join 을 사용하기 조금 난감하다. 이럴 땐 CountDownLatch 를 사용하면 편리하다.
+
+
 - 메서드
   - CountDownLatch(value): count값 초기화.
   - await(): count 값이 0이 될때까지 기달.
